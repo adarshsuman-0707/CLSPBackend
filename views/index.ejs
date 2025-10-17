@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radhika</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body> 
+    <%-include('header')-%>
+    <%=temp%>
+    <table class="table w-25">
+      <tr>  <th>Name</th>
+        <th>Branch</th>
+</tr>
+        <%_ obj.map((e)=>{ _%>
+          <tr>
+            <td><%= e.name %></td>
+            <td><%= e.Branch %></td>
+        </tr>
+        
+        <%_})_%>
+      
+    </table>
+    <h1>hixnxnzx</h1>
+    <%-include('footer')-%>
+    
+</body>
+</html>
